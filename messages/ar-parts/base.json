@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "siteName": "AI4YOU",
+    "homeTitle": "ذكاء اصطناعي مبني لأعمالك ويعمل من أجلك",
+    "homeDescription": "وكلاء وأنظمة ومحتوى نبنيها وفق طريقة عمل شركتك بالضبط، لتتفرغ لما يهم حقاً."
+  },
+  "ui": {
+    "rights": "AI4YOU ©"
+  },
+  "nav": {
+    "services": "خدماتنا",
+    "howWeWork": "كيف نعمل",
+    "about": "من نحن",
+    "aboutUs": "من نحن",
+    "blog": "المدونة",
+    "languageEn": "EN",
+    "languageAr": "عربي"
+  },
+  "cta": {
+    "letsTalk": "لنتحدث",
+    "whatsapp": "راسلنا عبر واتساب",
+    "details": "التفاصيل",
+    "send": "أرسل وسنعود إليك"
+  },
+  "services": {
+    "ai-agents": { "name": "AI Agents" },
+    "conversational-ai": { "name": "Conversational AI" },
+    "ai-video-content": { "name": "AI Video & Content" },
+    "ai-systems-automation": { "name": "AI Systems & Automation" },
+    "ai-strategy-consulting": { "name": "AI Strategy & Consulting" }
+  },
+  "home": {
+    "hero": {
+      "headline": "ذكاء اصطناعي مبني <accent>لأعمالك</accent> ويعمل من أجلك",
+      "subline": "وكلاء وأنظمة ومحتوى نبنيها وفق طريقة عمل شركتك بالضبط، لتتفرغ لما يهم حقاً."
+    },
+    "experience": {
+      "heading": "سنوات من الخبرة. مئات الحلول. في كل مجال.",
+      "line": "بنينا وكلاء وأنظمة ومحتوى لشركات من كل القطاعات وبكل الأحجام، ونعرف ما الذي ينجح على أرض الواقع."
+    },
+    "midCta": {
+      "heading": "هل يبدو هذا مثل شركتك؟",
+      "line": "أخبرنا أين يذهب وقتك، وسنريك ما الذي يمكن تغييره."
+    }
+  },
+  "whatsapp": {
+    "prefill": "مرحباً AI4YOU، أود التحدث عن شركتي."
+  },
+  "video": {
+    "soundOn": "تشغيل الصوت"
+  }
+}

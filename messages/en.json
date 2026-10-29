@@ -1,0 +1,447 @@
+{
+  "meta": {
+    "siteName": "AI4YOU",
+    "homeTitle": "AI built for your business, working for you",
+    "homeDescription": "Agents, systems and content built around exactly how your business works, so you can focus on what really matters."
+  },
+  "ui": {
+    "skipToContent": "[TBC: Skip to content]",
+    "openMenu": "[TBC: Open menu]",
+    "closeMenu": "[TBC: Close menu]",
+    "privacy": "[TBC: Privacy policy]",
+    "rights": "AI4YOU ©",
+    "licence": "[TBC: business licence]",
+    "phone": "[TBC: phone]",
+    "email": "[TBC: email]",
+    "office": "[TBC: office]",
+    "videoPending": "[TBC: video and script]"
+  },
+  "nav": {
+    "services": "Services",
+    "howWeWork": "How we work",
+    "about": "About",
+    "aboutUs": "About us",
+    "blog": "Blog",
+    "languageEn": "EN",
+    "languageAr": "عربي"
+  },
+  "cta": {
+    "letsTalk": "Let's talk",
+    "whatsapp": "Message us on WhatsApp",
+    "details": "Details",
+    "send": "Send, and we'll get back to you",
+    "seeAllSteps": "See all the steps"
+  },
+  "whatsapp": {
+    "prefill": "Hi AI4YOU, I'd like to talk about my business.",
+    "floatLabel": "Chat on WhatsApp"
+  },
+  "video": {
+    "label": "This video was produced entirely with AI, by us.",
+    "soundOn": "Turn sound on"
+  },
+  "services": {
+    "ai-agents": {
+      "name": "AI Agents",
+      "line": "Agents that complete entire tasks for you."
+    },
+    "conversational-ai": {
+      "name": "Conversational AI",
+      "line": "Answers, serves and closes with your customers, in any language and on any channel."
+    },
+    "ai-video-content": {
+      "name": "AI Video & Content",
+      "line": "Professional video and content, without the production costs."
+    },
+    "ai-systems-automation": {
+      "name": "AI Systems & Automation",
+      "line": "Complex work made simple and self-running."
+    },
+    "ai-strategy-consulting": {
+      "name": "AI Strategy & Consulting",
+      "line": "Know exactly what your business should do with AI."
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": "AI built for <accent>your business</accent>, working for you",
+      "subline": "Agents, systems and content built around exactly how your business works, so you can focus on what really matters."
+    },
+    "services": {
+      "heading": "Everything your business needs from AI, in one place."
+    },
+    "experience": {
+      "heading": "Years of experience. Hundreds of solutions. Every field.",
+      "line": "We have built agents, systems and content for businesses of every sector and size, and we know what works in practice."
+    },
+    "withWithout": {
+      "heading": "This is what your day looks like. And this is what it could look like.",
+      "without": "Without",
+      "with": "With",
+      "rows": [
+        {
+          "without": "Leads wait until you are free, and some go to a competitor.",
+          "with": "Every lead gets an instant reply, and the meeting is already in your calendar."
+        },
+        {
+          "without": "Hours every week on reports, documents and orders.",
+          "with": "Everything is ready and only waiting for your approval."
+        },
+        {
+          "without": "Social content needs a photographer, a studio and a budget.",
+          "with": "Professional content from the material you already have."
+        },
+        {
+          "without": "Information scattered across ten places.",
+          "with": "Everything in one clear place."
+        }
+      ]
+    },
+    "midCta": {
+      "heading": "Sound like your business?",
+      "line": "Tell us where your time goes, and we'll show you what can change."
+    },
+    "process": {
+      "heading": "To build it right, we have to understand your business as well as you do.",
+      "steps": ["Listen", "Map", "Propose", "Build with you", "Implement", "Stay with you"]
+    },
+    "control": {
+      "heading": "You set the rules. The system follows them, always.",
+      "line": "What it may do, which systems it can reach, what it handles alone, when to hand over to you and what it must never do. All defined with you before the system goes live.",
+      "toggles": ["What it may do", "Which systems it can reach", "What it handles alone", "When to hand over to you", "What it must never do"]
+    },
+    "lasting": {
+      "heading": "Built to keep working, not just on day one.",
+      "items": ["Team training", "Role-based permissions", "Regular quality checks", "Ongoing support and improvement"]
+    },
+    "ownership": {
+      "heading": "Your system. Your content. <accent>Your data.</accent>",
+      "line": "Everything we build is developed for you, and your business and customer data always stays yours."
+    },
+    "faq": [
+      {
+        "q": "How are you different from AI tools I can buy myself?",
+        "a": "An off-the-shelf tool is built for everyone, and you have to adapt your business to it. We do the opposite: first we learn how your business works, then we build a solution that fits your processes, your customers and your language exactly. Once it is live, we keep supporting and improving it."
+      },
+      {
+        "q": "Is this right for a small business too?",
+        "a": "Yes. The solution is built around your business's size, needs and budget. In a small business, every hour freed up and every lead that isn't lost makes an even bigger difference."
+      },
+      {
+        "q": "Will it work with the systems I already use?",
+        "a": "In most cases, yes. We connect to the systems you already work with, so there is no need to replace them or relearn everything. In the intro call we check exactly what you have and how to connect."
+      },
+      {
+        "q": "Which languages and channels does it work in?",
+        "a": "Every language your customers speak, including English, Arabic and Russian. The channels are WhatsApp, website chat, phone and any other channel we define together."
+      },
+      {
+        "q": "What happens when the system doesn't know what to do?",
+        "a": "It hands the matter to you or to the right team member, together with all the information gathered up to that point. You decide in advance what it handles alone and what always comes to you."
+      },
+      {
+        "q": "Who owns the system, the content and the data?",
+        "a": "You do. Everything we build is developed for you, the content we produce belongs to you, and your business and customer data always stays yours."
+      }
+    ],
+    "finalCta": {
+      "heading": "Tell us how your business works. We'll show you exactly where AI will make the difference."
+    }
+  },
+  "form": {
+    "name": "Name",
+    "fullName": "Full name",
+    "phone": "Phone",
+    "phonePrefix": "[TBC: Country code]",
+    "business": "Business name",
+    "interest": "What are you interested in?",
+    "notSure": "Not sure yet",
+    "message": "Briefly tell us what you need (optional)",
+    "note": "Your details stay with us and are used only to get back to you.",
+    "errorRequired": "[TBC: required field error]",
+    "errorPhone": "[TBC: invalid phone error]",
+    "errorServer": "[TBC: server error]",
+    "sending": "[TBC: sending]"
+  },
+  "servicePage": {
+    "problem": "The problem",
+    "build": "What exactly we build",
+    "items": {
+      "ai-agents": {
+        "problem": "You and your best people lose hours every day to repetitive work: documents, reports, follow-ups, system updates and reminders. It matters, but it doesn't move the business forward. It just eats the time that should go to customers, sales and growth.",
+        "build": "An AI agent that runs complete workflows for you, from start to finish. It works inside the systems you already have, follows the rules you set, logs every action and only brings you what truly needs your decision.",
+        "examples": [
+          {
+            "field": "Marketing agencies",
+            "quote": "At the end of every month my team and I spend two days preparing client reports instead of working on campaigns.",
+            "answer": "The agent we build for you prepares a clear report for each client from all the data and sends it to you for approval. You just review it and press send."
+          },
+          {
+            "field": "Recruitment",
+            "quote": "I posted a job and hundreds of CVs came in. By the time I reached the best candidate, they had already been hired elsewhere.",
+            "answer": "The agent we build for you reviews every CV the moment it arrives, flags the right candidates and offers them an interview slot."
+          },
+          {
+            "field": "Accounting firms",
+            "quote": "Half of my assistant's time goes on calling clients to send receipts and documents.",
+            "answer": "The agent we build for you sends the requests, checks what has arrived and what is missing, and reminds each client until their file is complete."
+          },
+          {
+            "field": "Insurance",
+            "quote": "A long-standing client moved to another company, and only then did I find out his policy had expired and nobody had called him.",
+            "answer": "The agent we build for you spots upcoming renewals and contacts the client in advance, so you speak with them before a competitor does."
+          }
+        ],
+        "steps": [
+          { "title": "Intro call", "text": "You tell us how your business works and where your time goes. We listen and ask until we understand the work the way you do." },
+          { "title": "Scoping", "text": "Together we define exactly what the agent we build for you does, which systems it works in and when it hands over to you." },
+          { "title": "Build and test", "text": "We build the agent and test it on real cases from your business before it touches a single customer." },
+          { "title": "Go live", "text": "The agent starts working, and you can see every action it takes." },
+          { "title": "Support and improvement", "text": "We monitor, fix and improve it over time." }
+        ],
+        "faq": [
+          { "q": "How is an agent different from regular software?", "a": "Software does what you click. The agent we build for you completes an entire task on its own, from start to finish, and only brings you what needs your decision." },
+          { "q": "Can it work with the systems I already have?", "a": "In most cases, yes. In the intro call we check which systems you have and how to connect to them." },
+          { "q": "What if it makes a mistake?", "a": "You decide in advance what it may do on its own and what needs your approval, and you can see every action it takes." },
+          { "q": "Will my team need to learn something new?", "a": "Almost nothing. The agent works inside the tools your team already knows." }
+        ],
+        "ctaHeading": "Which task would you like to stop doing yourself?",
+        "ctaLine": "Tell us what takes up most of your time, and we'll show you how the agent we build for you can do it instead."
+      },
+      "conversational-ai": {
+        "problem": "Customers reach out all day, on WhatsApp, by phone and on your website, and you can't always reply right away. A customer who waits goes to a competitor, and one who gets a partial answer doesn't come back. Every message left unanswered is money gone.",
+        "build": "A conversational agent that handles communication with your customers from the first message to the close. It replies instantly, understands what the customer needs, provides service, books meetings and closes, in any language and on every channel we define. When it needs you, it hands the conversation over with all the details.",
+        "examples": [
+          {
+            "field": "Real estate",
+            "quote": "During the day I'm in meetings and property viewings, and I can't keep up with every lead. I missed one, and when I got back to him a few hours later he was already working with another broker. I lost the deal.",
+            "answer": "The agent we build for you answers every lead the moment it comes in, asks what they are looking for and their budget, and books a meeting in your calendar. You walk into a lead that is already waiting for you."
+          },
+          {
+            "field": "Aesthetics clinics",
+            "quote": "When I'm in the middle of a treatment, I can't answer WhatsApp. By the time I'm free, the client has already booked somewhere else.",
+            "answer": "The agent we build for you replies to her straight away, explains the treatment, gives the price and books the appointment."
+          },
+          {
+            "field": "Hotels",
+            "quote": "At check-in time the front desk is packed, and the phone and WhatsApp don't stop: parking, breakfast hours, room changes.",
+            "answer": "The agent we build for you answers all of these questions, and the front desk team looks after the guests standing in front of them."
+          },
+          {
+            "field": "Car dealerships",
+            "quote": "On Fridays dozens of leads come in from the campaign, and by the time the sales team reaches them all, half no longer answer.",
+            "answer": "The agent we build for you talks to every lead immediately, understands which car they want and books a test drive."
+          }
+        ],
+        "steps": [
+          { "title": "Getting to know your customers", "text": "We learn what your customers ask, how they talk and what makes them decide." },
+          { "title": "Setting the tone and rules", "text": "You decide how the agent speaks, what it may say and when it hands the conversation over to you." },
+          { "title": "Connecting the channels", "text": "We connect it to WhatsApp, your website, your phone line and your calendar." },
+          { "title": "Testing on real conversations", "text": "We run conversations before launch, and you approve." },
+          { "title": "Go live and monitoring", "text": "Every conversation is saved for you, and you can see which leads were booked and what was said." }
+        ],
+        "faq": [
+          { "q": "Will customers feel they are talking to a bot?", "a": "The agent speaks in the tone you set and answers naturally and clearly. If you would like it to introduce itself as a digital assistant, it will." },
+          { "q": "Which languages does it speak?", "a": "Every language your customers speak, including English, Arabic and Russian. It replies to each customer in the language they used." },
+          { "q": "What happens when it doesn't know the answer?", "a": "It hands the conversation to you or to a team member, with everything said up to that point." },
+          { "q": "Where does it work?", "a": "On WhatsApp, website chat, phone and any other channel we define together for your business." }
+        ],
+        "ctaHeading": "How many customers went to a competitor just because you couldn't reply in time?",
+        "ctaLine": "The agent we build for you replies to every customer on time, serves them, closes with them and does all the work for you, even when you're busy."
+      },
+      "ai-video-content": {
+        "problem": "You know that without quality content on social media and in ads, your business isn't seen. But a traditional production needs photographers, a studio, shoot days and editing, and it costs a lot and takes time. In the end the content either never goes out, or too little of it does.",
+        "build": "Videos, ads and social content produced with AI to a high standard, without the usual production costs. Everything is tailored to your brand, your audience and the platform it goes on, built from the material you already have or from scratch.",
+        "examples": [
+          {
+            "field": "Online fashion",
+            "quote": "My ads use ordinary photos, and I can see they aren't driving sales. Shooting video for every product is too expensive.",
+            "answer": "We'll create short product videos you can run as ads right away."
+          },
+          {
+            "field": "Restaurants",
+            "quote": "I know I should be posting on Instagram, but I don't have the time or anyone to do it.",
+            "answer": "We'll prepare regular social content for you from the photos and videos you already have."
+          },
+          {
+            "field": "Courses and training",
+            "quote": "I filmed a course, and now every small update means going back to filming.",
+            "answer": "Update a lesson without reshooting, with an avatar that speaks in your voice."
+          },
+          {
+            "field": "Events",
+            "quote": "The client asks for a recap video of the event, and my editor only delivers it two weeks later.",
+            "answer": "Get a ready recap video quickly, without waiting for an editor."
+          }
+        ],
+        "steps": [
+          { "title": "Brief", "text": "You tell us what you want to achieve, who it is for and where it will run." },
+          { "title": "Concept and script", "text": "We present the idea and the script for your approval before production starts." },
+          { "title": "Production", "text": "We create the videos and content." },
+          { "title": "Revisions", "text": "You watch, comment, and we revise until it is exactly what you wanted." },
+          { "title": "Delivery", "text": "You receive ready files in every format you need." }
+        ],
+        "faq": [
+          { "q": "Do I need to film anything?", "a": "Not always. We can work with the photos, videos and material you already have." },
+          { "q": "Can I ask for revisions?", "a": "Yes. You watch, comment, and we revise." },
+          { "q": "Who owns the content?", "a": "You do. Everything we produce for you belongs to you, and you can use it wherever you like." },
+          { "q": "Will it fit every platform?", "a": "You receive the content in formats suited to every place it will be published." }
+        ],
+        "ctaHeading": "You know you need content, but production costs too much and takes too long?",
+        "ctaLine": "No photographers, no studio and no expensive shoot days. Tell us what you sell and to whom, and we'll take care of content that makes customers stop and look."
+      },
+      "ai-systems-automation": {
+        "problem": "Your business runs on many tools that don't talk to each other. Information is scattered, orders fall through the cracks, everything needs manual copying, and you have no clear picture of what is happening. As the business grows, the complexity grows with it.",
+        "build": "A system that brings every part of your business into one place and turns complicated processes into simple, automated ones. Information flows between systems on its own, repetitive tasks get done without manual work, and you can see at any moment where everything stands.",
+        "examples": [
+          {
+            "field": "Contracting",
+            "quote": "I run several projects at once, and I don't really know where I stand on costs until the project ends.",
+            "answer": "We'll build you a single screen that shows, for each project, how much you've spent, how much you've received and what is left."
+          },
+          {
+            "field": "Wholesale",
+            "quote": "Customers order on WhatsApp, by phone and by email, and every now and then an order is forgotten and an angry customer calls.",
+            "answer": "We'll build you a system that collects every order in one place, so none are forgotten."
+          },
+          {
+            "field": "Law firms",
+            "quote": "All the case deadlines are scattered across calendars and emails, and I'm constantly checking I haven't missed something.",
+            "answer": "We'll build you a system that brings every deadline together and reminds you in advance."
+          },
+          {
+            "field": "Gyms",
+            "quote": "A member stops coming, nobody notices, and two months later they cancel.",
+            "answer": "The system we build for you spots who hasn't come in for a while and sends them a personal message that brings them back."
+          }
+        ],
+        "steps": [
+          { "title": "Mapping", "text": "We sit with you and your team and see how the work really flows today, including everything done by hand." },
+          { "title": "Planning", "text": "We present a clear plan of what we will build, what it replaces and what it will change for you." },
+          { "title": "Building in stages", "text": "We build piece by piece, so you see results along the way and not only at the end." },
+          { "title": "Implementation", "text": "We train your team until everyone works with the system confidently." },
+          { "title": "Support", "text": "We stay available for fixes and improvements." }
+        ],
+        "faq": [
+          { "q": "Do I need to replace my systems?", "a": "Not necessarily. In most cases we connect and organise what you already have." },
+          { "q": "What if the business grows?", "a": "The system is built so that steps, people and processes can be added to it." },
+          { "q": "Who owns the system in the end?", "a": "You do. It is developed for you, and the system is yours." },
+          { "q": "What about my business data?", "a": "Your data stays yours, always. It is your business's and your customers' data, and only you decide what is done with it." }
+        ],
+        "ctaHeading": "How many hours a week go on complicated work that keeps repeating itself?",
+        "ctaLine": "We take the most complex processes in your business and turn them into a simple, efficient system that runs on its own, so you and your team are free for what really matters."
+      },
+      "ai-strategy-consulting": {
+        "problem": "Everyone is talking about AI, and you feel you have to get into it. But it isn't clear where to start, what will really help your business and what will just waste money. Without direction, it is easy to buy tools nobody uses.",
+        "build": "A clear plan for your business. We learn your business in depth, identify where AI will create the most value for you and where it isn't worth the investment, and give you an organised map of what to do, in what order and why.",
+        "examples": [
+          {
+            "field": "Retail",
+            "quote": "I hear everyone is bringing in AI, but I don't know where to start and I don't want to burn money on tools.",
+            "answer": "We'll go through your business with you and show you the three things most worth doing first."
+          },
+          {
+            "field": "Finance",
+            "quote": "I want to use AI, but I'm worried about what will happen to my clients' data.",
+            "answer": "We'll build you a plan that shows what can be done safely and how to start without risk."
+          },
+          {
+            "field": "Manufacturing",
+            "quote": "I feel the work on the factory floor isn't efficient, but I can't point to where.",
+            "answer": "We'll map the processes with you and show you where the time and money go."
+          },
+          {
+            "field": "Travel agencies",
+            "quote": "My team spends hours preparing quotes, and most customers never book.",
+            "answer": "We'll show you how to shorten quote preparation, so your team can work on more customers."
+          }
+        ],
+        "steps": [
+          { "title": "Assessment", "text": "We learn your business, your processes and your goals." },
+          { "title": "Spotting opportunities", "text": "We mark where AI will save you the most time and money, and where it isn't worth the investment." },
+          { "title": "Action plan", "text": "You receive an organised plan in order of priority, with what to do first and why." },
+          { "title": "Support in delivery", "text": "If you wish, we guide you through implementation or build it for you." }
+        ],
+        "faq": [
+          { "q": "Do I have to build with you after the consultation?", "a": "No. The plan is yours, and you decide whether to implement it with us, on your own or with someone else." },
+          { "q": "Do I need technical knowledge to work with you?", "a": "No. We explain everything in plain language." },
+          { "q": "What do I get at the end?", "a": "An organised plan that shows what is worth doing, in what order and why." },
+          { "q": "Is it suitable for a small business?", "a": "Yes. The recommendations are built around your business's size and budget." }
+        ],
+        "ctaHeading": "Not sure where to start? This is exactly the place.",
+        "ctaLine": "One conversation with us, and you'll know what your business should do with AI."
+      }
+    }
+  },
+  "howWeWork": {
+    "heading": "To build it right, we have to understand your business as well as you do.",
+    "line": "Before we build anything, we learn how your business really works: who your customers are, where the time goes and what is holding you back. Only then do we decide what to build.",
+    "practiceTitle": "What it looks like in practice",
+    "steps": [
+      { "title": "Listen", "text": "A conversation where you tell us about your business, and we ask until we understand it as well as you do." },
+      { "title": "Map", "text": "We look at how the work flows today, including everything done by hand." },
+      { "title": "Propose", "text": "You get a clear proposal of what we will build, why, and what it will change in your day to day." },
+      { "title": "Build with you", "text": "We build in stages, and you see and approve every stage." },
+      { "title": "Implement", "text": "We teach you and your team to work with what we built." },
+      { "title": "Stay with you", "text": "We keep monitoring, fixing and improving." }
+    ],
+    "valuesTitle": "What matters to us",
+    "values": [
+      { "title": "Transparency", "text": "You always know what we are building, where we stand and what the system is doing." },
+      { "title": "You stay in control", "text": "You decide what the agent or system does on its own and what comes to you." },
+      { "title": "It's all yours", "text": "The system, the content and the data belong to you." },
+      { "title": "Plain language", "text": "No technical jargon. We explain everything so it is clear." }
+    ],
+    "ctaHeading": "Want to see how it would look in your business?",
+    "ctaLine": "Tell us about your business, and we'll show you the right place to start."
+  },
+  "about": {
+    "heading": "Years of experience. Hundreds of solutions. Every field.",
+    "paragraph": "AI4YOU has been developing artificial intelligence solutions for businesses for several years. In that time we have designed and built intelligent agents, operations and automation systems, and content and video for businesses of every sector and size. That work has taught us one thing: AI only succeeds when it is built around the way a business really works. That is why every solution we deliver starts with a deep understanding of the business, is built with care, and is embedded until it becomes a natural part of everyday work.",
+    "whatTitle": "What we do",
+    "what": [
+      { "slug": "ai-agents", "title": "AI agents", "text": "We develop agents that carry out complete workflows, make decisions according to the rules you set and work inside your existing systems. The tasks that take hours out of your day and your team's are handled in the background, accurately and consistently." },
+      { "slug": "conversational-ai", "title": "Conversational agents", "text": "We build agents that manage communication with your customers from the first message to the close. They answer, find out what customers need, provide service, book meetings and close deals, in any language and on any channel: WhatsApp, website, phone and more." },
+      { "slug": "ai-video-content", "title": "Video and content", "text": "We produce high-quality videos and marketing content with AI, without film crews, without studios and without the usual production costs. The content is tailored to your brand, your audience and every platform it appears on." },
+      { "slug": "ai-systems-automation", "title": "Systems and automation", "text": "We analyse the most complex processes in your business and redesign the way they work. Information comes together in one place, systems talk to each other, and work that used to be manual and cumbersome becomes a simple, efficient process that runs on its own." },
+      { "slug": "ai-strategy-consulting", "title": "Strategy and consulting", "text": "We examine your business in depth, identify where AI will create the greatest value and build you an organised plan, with clear priorities and in line with your goals and budget." }
+    ],
+    "whyTitle": "Why businesses choose us",
+    "why": [
+      { "title": "Proven experience in the field", "text": "We have worked with businesses across many different fields. We know their challenges first-hand, and we can tell the difference between a solution that looks good in a presentation and one that holds up in real work." },
+      { "title": "Understanding before building", "text": "To build it right, we have to understand your business as well as you do. That is why we learn your processes, your customers and your team before we propose a solution." },
+      { "title": "A solution built precisely for you", "text": "We don't sell ready-made templates. Every agent, system and piece of content is designed around the needs, language and character of your business." },
+      { "title": "Full control and transparency", "text": "You decide what the system does on its own and what comes to you, and you can always see what is happening and why." },
+      { "title": "Your ownership", "text": "The system, the content and the data belong to you. It is developed for you, and your business and customer data always stays yours." },
+      { "title": "A long-term partnership", "text": "Our work doesn't end when the system goes live. We keep monitoring, measuring and improving, so the solution grows with your business." }
+    ],
+    "ctaHeading": "Let's get to know your business.",
+    "ctaLine": "Tell us what you are looking for, and we'll show you how our experience becomes a solution that works for you."
+  },
+  "contact": {
+    "heading": "Every good solution starts with one conversation.",
+    "paragraph": "Tell us about your business, your challenges and what you would like to improve. We'll get back to you for a focused call, ask the right questions and show you which solutions can create the most value for you. No commitment and no pressure, just a professional conversation that brings clarity.",
+    "afterTitle": "What happens after you send",
+    "after": [
+      { "title": "We review your request", "text": "We learn about your business before the call, so it is focused from the first minute." },
+      { "title": "Intro call", "text": "We understand your needs, your processes and your goals." },
+      { "title": "A clear direction", "text": "You get our professional recommendation on the right next step for your business." }
+    ],
+    "talkTitle": "Prefer to talk now?",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "officeLabel": "Office"
+  },
+  "blog": {
+    "heading": "AI insights for your business",
+    "empty": "[TBC: first articles, after keyword research]"
+  },
+  "privacy": {
+    "heading": "[TBC: Privacy policy]",
+    "body": "[TBC: EN version after Thomas's decisions and legal review]"
+  },
+  "notFound": {
+    "title": "[TBC: 404 heading]",
+    "body": "[TBC: 404 copy]"
+  }
+}
