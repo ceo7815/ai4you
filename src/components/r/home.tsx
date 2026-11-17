@@ -73,7 +73,8 @@ export async function HowSection() {
                     <Icon size={22} strokeWidth={1.7} aria-hidden />
                   </span>
                   <h3>
-                    <span className="r-step-n">{step.n}</span> {step.t}
+                    <span className="r-step-n">{step.n}</span>
+                    <span className="r-step-t">{step.t}</span>
                   </h3>
                   <p>{step.d}</p>
                 </li>

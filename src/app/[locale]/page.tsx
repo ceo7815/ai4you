@@ -36,6 +36,7 @@ export default async function HomePage() {
   return (
     <>
       <section data-hero className="r-hero" aria-labelledby="h-hero">
+        <HeroVisual labels={labels} caption={t("r.hero.tiles")} />
         <div className="r-wrap r-hero-grid">
           <div className="r-hero-copy">
             <h1 id="h-hero" className="r-h1">
@@ -51,7 +52,6 @@ export default async function HomePage() {
               </a>
             </div>
           </div>
-          <HeroVisual labels={labels} caption={t("r.hero.tiles")} />
         </div>
       </section>
       <ServicesSection />

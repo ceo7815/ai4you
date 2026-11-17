@@ -2,12 +2,12 @@ import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
 import { serviceSlugs } from "@/lib/services";
 import { Logo } from "./logo";
+import { LangSwitch } from "./lang-switch";
 
 export async function Footer() {
   const locale = await getLocale();
   const t = await getTranslations();
   const p = (path: string) => `/${locale}${path === "/" ? "" : path}`;
-  const other = locale === "en" ? "ar" : "en";
   const year = new Date().getFullYear();
 
   const links = [
@@ -21,7 +21,7 @@ export async function Footer() {
   return (
     <footer className="r-footer">
       <div className="r-wrap r-footer-top">
-        <Link href={p("/")} aria-label="AI4U" className="r-logo-link">
+        <Link href={p("/")} aria-label="AI4U" className="r-logo-link r-footer-logo">
           <Logo id="ft" />
         </Link>
         <nav aria-label="AI4U" className="r-footer-nav">
@@ -45,9 +45,7 @@ export async function Footer() {
               <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
             </span>
           </p>
-          <Link href={`/${other}${""}`} hrefLang={other} className="r-footer-lang">
-            {other === "en" ? t("nav.languageEn") : t("nav.languageAr")}
-          </Link>
+          <LangSwitch locale={locale} langEn={t("nav.languageEn")} langAr={t("nav.languageAr")} className="r-lang r-footer-lang-wrap" />
         </div>
       </div>
       <div className="r-wrap r-footer-bar">
