@@ -99,41 +99,41 @@
   --color-*: initial;
 
   /* Brand board supplied 22.10.2026. One field: #050A14. Snow is the only pure white. */
-  --color-ink: #f4f7fb;
-  --color-ink-soft: #101828;
-  --color-muted: #c3cee0;
-  --color-faint: #8e9bb3;
-  --color-paper: #050a14;
+  --color-ink: #070d1f;
+  --color-ink-soft: #1c2742;
+  --color-muted: #46557a;
+  --color-faint: #5d6c8c;
+  --color-paper: #f4f8ff;
   --color-snow: #ffffff;
-  --color-card: #101828;
-  --color-sand: #0b1324;
-  --color-sand-2: #151e32;
-  --color-line: rgb(232 241 255 / 0.14);
-  --color-line-strong: rgb(232 241 255 / 0.28);
-  --color-glass: rgb(5 10 20 / 0.62);
+  --color-card: #ffffff;
+  --color-sand: #eaf1ff;
+  --color-sand-2: #dfe9ff;
+  --color-line: rgb(15 36 90 / 0.1);
+  --color-line-strong: rgb(15 36 90 / 0.2);
+  --color-glass: rgb(255 255 255 / 0.7);
 
   /* Primary #0A6CFF, accent #38B2F6, light #E8F1FF, navy #050A14 */
-  --color-brand-50: #e8f1ff;
+  --color-brand-50: #eff4ff;
   --color-brand-100: #c5dcff;
   --color-brand-200: #7eb6ff;
   --color-brand-300: #38b2f6;
-  --color-brand-400: #1a8cff;
-  --color-brand-500: #0a6cff;
-  --color-brand-600: #0854d0;
-  --color-brand-700: #0640a3;
+  --color-brand-400: #3b82f6;
+  --color-brand-500: #1d4ed8;
+  --color-brand-600: #1e40af;
+  --color-brand-700: #1e3a8a;
   --color-brand-800: #0b1c3d;
   --color-brand-900: #050a14;
 
   /* Glow and links on the dark field. Not body copy. */
-  --color-accent-50: #102038;
-  --color-accent-100: #163056;
-  --color-accent-200: #1e4b86;
-  --color-accent-300: #5ec4ff;
-  --color-accent-500: #38b2f6;
-  --color-accent-600: #6ec8ff;
-  --color-accent-700: #9fd6ff;
-  --color-accent-800: #e8f1ff;
-  --color-accent-900: #f4f8ff;
+  --color-accent-50: #eef4ff;
+  --color-accent-100: #dbe7ff;
+  --color-accent-200: #bcd1ff;
+  --color-accent-300: #7aa2ff;
+  --color-accent-500: #2563eb;
+  --color-accent-600: #1d4ed8;
+  --color-accent-700: #1e40af;
+  --color-accent-800: #1e3a8a;
+  --color-accent-900: #172554;
 
   /* 4.1 single-use */
   --color-whatsapp: #25d366;
@@ -332,7 +332,7 @@
   html {
     color: var(--color-ink);
     background: var(--color-paper);
-    color-scheme: dark;
+    color-scheme: light;
     font-family: var(--font-sans);
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
@@ -593,7 +593,7 @@
     box-shadow 0.45s var(--ease-out-soft);
 }
 .site-header[data-scrolled="true"] .site-header-bar {
-  background: rgb(5 10 20 / 0.94);
+  background: rgb(255 255 255 / 0.82); backdrop-filter: blur(18px) saturate(1.4);
   box-shadow: 0 18px 40px -30px rgb(0 0 0 / 0.85);
 }
 .site-header[data-scrolled="true"] .site-header-bar::after {
@@ -698,9 +698,9 @@
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(38vw 38vw at 82% var(--glow-y, 14%), rgb(10 108 255 / 0.5), transparent 68%),
-    radial-gradient(32vw 32vw at 8% calc(var(--glow-y, 14%) + 18%), rgb(56 178 246 / 0.28), transparent 70%),
-    radial-gradient(60vw 28vw at 50% 120%, rgb(10 108 255 / 0.2), transparent 70%);
+    radial-gradient(46vw 40vw at 88% -4%, rgb(37 99 235 / 0.16), transparent 68%),
+    radial-gradient(40vw 36vw at 4% 12%, rgb(96 165 250 / 0.18), transparent 70%),
+    linear-gradient(180deg, #f8fbff 0%, #eef4ff 55%, #f6f9ff 100%);
 }
 
 @media (width >= 64rem) and (prefers-reduced-motion: no-preference) {
