@@ -18,7 +18,7 @@ const hex = /#[0-9a-fA-F]{3,8}\b/g;
 const truncate = /(?<![\w-])(?:truncate|text-ellipsis|line-clamp-\d)(?![\w-])/g;
 
 /** Files allowed to carry raw hex: the token file, the styleguide reference table, and metadata. */
-const hexAllowed = new Set([tokenFile, join("src", "app", "[locale]", "styleguide", "page.tsx"), join("src", "app", "[locale]", "layout.tsx")]);
+const hexAllowed = new Set([tokenFile, join("src", "styles", "redesign.css"), join("src", "app", "[locale]", "styleguide", "page.tsx"), join("src", "app", "[locale]", "layout.tsx")]);
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {

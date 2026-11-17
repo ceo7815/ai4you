@@ -74,17 +74,7 @@ export default async function ContactPage({ params }: Props) {
             <WhatsAppButton href={whatsappHref(t("whatsapp.prefill"))} block className="mt-4">
               {t("cta.whatsapp")}
             </WhatsAppButton>
-            <ul className="mt-5 grid gap-2 text-sm text-muted">
-              <li>
-                {t("contact.phoneLabel")}: {t("ui.phone")}
-              </li>
-              <li>
-                {t("contact.emailLabel")}: {t("ui.email")}
-              </li>
-              <li>
-                {t("contact.officeLabel")}: {t("ui.office")}
-              </li>
-            </ul>
+            {/* Phone, email and office stay hidden until Tomas supplies them ([חסר]). */}
           </div>
         </aside>
       </div>

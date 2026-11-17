@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "@/styles/redesign.css";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
@@ -8,8 +9,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeDirection, routing, type Locale } from "@/i18n/routing";
 import { siteUrl } from "@/lib/site";
 import { whatsappHref } from "@/lib/whatsapp";
-import { Header } from "@/components/site/header";
-import { Footer } from "@/components/site/footer";
+import { Header } from "@/components/r/header";
+import { Footer } from "@/components/r/footer";
 import { WhatsAppFloat } from "@/components/site/whatsapp-float";
 import { RevealObserver } from "@/components/motion/reveal-observer";
 import { DesktopMotion } from "@/components/motion/desktop-motion";
@@ -32,11 +33,13 @@ export async function generateMetadata({ params }: Omit<Props, "children">): Pro
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     metadataBase: new URL(siteUrl),
-    title: { default: `${t("siteName")} · ${t("homeTitle")}`, template: `%s · ${t("siteName")}` },
+    title: { default: `${t("homeTitle")} · ${t("siteName")}`, template: `%s · ${t("siteName")}` },
     description: t("homeDescription"),
     applicationName: t("siteName"),
-    // Logo / favicon is [TBC] (spec 14); an empty icon stops the browser requesting /favicon.ico.
-    icons: { icon: "/icon.png", apple: "/icon.png" },
+    // Official mark/favicon still [TBC] in the spec; current icon is a temporary A mark.
+    icons: { icon: "/icon.svg", apple: "/icon.png" },
+    robots: process.env.NEXT_PUBLIC_NOINDEX === "1" ? { index: false, follow: false } : undefined,
+    openGraph: { siteName: t("siteName"), type: "website", images: ["/og.jpg"] },
   };
 }
 
@@ -44,7 +47,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#050A14",
+  themeColor: "#f4f8ff",
 };
 
 export default async function LocaleLayout({ children, params }: Props) {

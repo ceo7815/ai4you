@@ -5,7 +5,7 @@
     "homeDescription": "وكلاء وأنظمة ومحتوى نبنيها وفق طريقة عمل شركتك بالضبط، لتتفرغ لما يهم حقاً."
   },
   "ui": {
-    "skipToContent": "[يُستكمل: Skip to content]",
+    "skipToContent": "Skip to content",
     "openMenu": "[يُستكمل: Open menu]",
     "closeMenu": "[يُستكمل: Close menu]",
     "privacy": "[يُستكمل: Privacy policy]",
@@ -670,5 +670,124 @@
   "notFound": {
     "title": "[يُستكمل: 404 heading]",
     "body": "[يُستكمل: 404 copy]"
+  },
+  "r": {
+    "nav": {
+      "home": "Home",
+      "caseStudies": "Case Studies",
+      "insights": "Insights",
+      "about": "About",
+      "letsTalk": "Let's Talk",
+      "menu": "Menu",
+      "close": "Close"
+    },
+    "hero": {
+      "title": "AI that moves your business forward.",
+      "sub": "Practical AI solutions, creative content, and smart automation designed around your business.",
+      "talk": "Let's Talk",
+      "explore": "Explore Our Services",
+      "tiles": "AI4U services"
+    },
+    "services": {
+      "title": "Our Services",
+      "sub": "Everything your business needs from AI, in one place."
+    },
+    "how": {
+      "title": "How We Work",
+      "sub": "A clear, human process from first conversation to lasting results.",
+      "steps": [
+        {
+          "n": "01",
+          "t": "Discover",
+          "d": "We learn how your business really works and where the time goes."
+        },
+        {
+          "n": "02",
+          "t": "Design",
+          "d": "We map the workflow and propose exactly what to build."
+        },
+        {
+          "n": "03",
+          "t": "Build",
+          "d": "We build it with you, around your processes and your language."
+        },
+        {
+          "n": "04",
+          "t": "Implement",
+          "d": "We embed it into the systems and the team you already have."
+        },
+        {
+          "n": "05",
+          "t": "Refine",
+          "d": "We stay with you, check the quality and keep improving it."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Case Studies",
+      "sub": "Examples of what AI can do for a business like yours.",
+      "all": "View All Case Studies",
+      "badge": "Example scenario",
+      "items": [
+        {
+          "tag": "Conversational AI",
+          "t": "Instant replies for every new lead",
+          "d": "An assistant that answers, qualifies and books meetings around the clock, in your customers' language."
+        },
+        {
+          "tag": "AI Agents",
+          "t": "Monthly reports that prepare themselves",
+          "d": "An agent that builds each client report from your data and sends it to you for approval."
+        },
+        {
+          "tag": "AI Video & Content",
+          "t": "Professional video without the production costs",
+          "d": "Polished video and social content created from the material you already have."
+        }
+      ]
+    },
+    "insights": {
+      "title": "Insights",
+      "sub": "Practical thinking on AI for real businesses.",
+      "all": "View All Insights",
+      "read": "5 min read",
+      "soon": "Full articles are on the way.",
+      "items": [
+        {
+          "tag": "Use Cases",
+          "t": "Five everyday tasks an AI agent can take off your plate",
+          "d": "From reports to follow-ups, the repetitive work that quietly eats your week."
+        },
+        {
+          "tag": "Strategy",
+          "t": "Where should your business start with AI?",
+          "d": "A simple way to find the first project that pays back, before you build anything."
+        },
+        {
+          "tag": "Content",
+          "t": "Professional video and content without a studio",
+          "d": "How AI changes what a small team can produce, and where a human eye still matters."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's Talk About Your Business.",
+      "sub": "Tell us where your time goes, and we'll show you what can change.",
+      "talk": "Let's Talk",
+      "wa": "Chat on WhatsApp"
+    },
+    "footer": {
+      "tag": "AI that moves your business forward.",
+      "company": "Company",
+      "services": "Services",
+      "follow": "Follow",
+      "privacy": "Privacy Policy",
+      "terms": "Terms",
+      "rights": "All rights reserved."
+    },
+    "pages": {
+      "casesIntro": "Illustrative scenarios showing how AI4U solutions work in practice. Real client stories will be added here with their permission.",
+      "insightsIntro": "Practical thinking on AI for real businesses. Articles are published here as they are ready."
+    }
   }
 }
