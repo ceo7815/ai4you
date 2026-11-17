@@ -1,6 +1,5 @@
 import type { ServiceSlug } from "@/lib/services";
 
-/** Generated photoreal card art. WebP, 1024w and 512w. */
 export const cardImg: Record<ServiceSlug, string> = {
   "ai-agents": "svc-agents",
   "conversational-ai": "svc-conversational",
@@ -8,15 +7,16 @@ export const cardImg: Record<ServiceSlug, string> = {
   "ai-systems-automation": "svc-systems",
   "ai-strategy-consulting": "svc-strategy",
 };
-export const caseImgs = ["case-1", "case-2", "case-3"] as const;
-export const insightImgs = ["insight-1", "insight-2", "insight-3"] as const;
 
-export function imgProps(name: string, sizes: string) {
+export const caseImgs = ["case-service", "case-ops", "case-content"] as const;
+export const insightImgs = ["insight-usecases", "insight-strategy", "case-content"] as const;
+
+export function imgProps(name: string, sizes: string, wide = false) {
   return {
     src: `/img/${name}.webp`,
-    srcSet: `/img/${name}-sm.webp 512w, /img/${name}.webp 1024w`,
+    srcSet: `/img/${name}-sm.webp 640w, /img/${name}.webp 1280w`,
     sizes,
-    width: 1024,
-    height: 768,
+    width: wide ? 1280 : 864,
+    height: wide ? 720 : 1152,
   } as const;
 }

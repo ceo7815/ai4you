@@ -8,10 +8,8 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeDirection, routing, type Locale } from "@/i18n/routing";
 import { siteUrl } from "@/lib/site";
-import { whatsappHref } from "@/lib/whatsapp";
 import { Header } from "@/components/r/header";
 import { Footer } from "@/components/r/footer";
-import { WhatsAppFloat } from "@/components/site/whatsapp-float";
 import { RevealObserver } from "@/components/motion/reveal-observer";
 import { DesktopMotion } from "@/components/motion/desktop-motion";
 
@@ -47,7 +45,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#f4f8ff",
+  themeColor: "#ffffff",
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
@@ -77,7 +75,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           {children}
         </main>
         <Footer />
-        <WhatsAppFloat href={whatsappHref(t("whatsapp.prefill"))} label={t("whatsapp.floatLabel")} />
         <RevealObserver />
         <DesktopMotion />
       </body>

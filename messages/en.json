@@ -690,104 +690,98 @@
     },
     "services": {
       "title": "Our Services",
-      "sub": "Everything your business needs from AI, in one place."
+      "sub": "End-to-end AI solutions that create real business impact.",
+      "lines": {
+        "ai-agents": "AI agents that get work done.",
+        "conversational-ai": "Better conversations. Smarter service.",
+        "ai-video-content": "Content that moves your brand forward.",
+        "ai-systems-automation": "Connected systems. Simpler operations.",
+        "ai-strategy-consulting": "The right AI starts with the right strategy."
+      }
     },
     "how": {
       "title": "How We Work",
-      "sub": "A clear, human process from first conversation to lasting results.",
+      "sub": "A clear, collaborative process that turns your goals into practical AI solutions.",
       "steps": [
         {
           "n": "01",
           "t": "Discover",
-          "d": "We learn how your business really works and where the time goes."
+          "d": "Understand your business, goals, and real needs."
         },
         {
           "n": "02",
           "t": "Design",
-          "d": "We map the workflow and propose exactly what to build."
+          "d": "Shape the right solution for your business."
         },
         {
           "n": "03",
           "t": "Build",
-          "d": "We build it with you, around your processes and your language."
+          "d": "Develop and tailor the solution to fit your operations."
         },
         {
           "n": "04",
           "t": "Implement",
-          "d": "We embed it into the systems and the team you already have."
+          "d": "Roll it out smoothly, with your team ready to use it."
         },
         {
           "n": "05",
           "t": "Refine",
-          "d": "We stay with you, check the quality and keep improving it."
+          "d": "Measure, improve, and grow the impact over time."
         }
       ]
     },
     "cases": {
       "title": "Case Studies",
-      "sub": "Examples of what AI can do for a business like yours.",
       "all": "View All Case Studies",
-      "badge": "Example scenario",
       "items": [
         {
-          "tag": "Conversational AI",
-          "t": "Instant replies for every new lead",
-          "d": "An assistant that answers, qualifies and books meetings around the clock, in your customers' language."
+          "t": "A Smarter Customer Service Experience with AI"
         },
         {
-          "tag": "AI Agents",
-          "t": "Monthly reports that prepare themselves",
-          "d": "An agent that builds each client report from your data and sends it to you for approval."
+          "t": "Streamlining Operations with Intelligent Automation"
         },
         {
-          "tag": "AI Video & Content",
-          "t": "Professional video without the production costs",
-          "d": "Polished video and social content created from the material you already have."
+          "t": "AI-Powered Content for a Business Campaign"
         }
       ]
     },
     "insights": {
       "title": "Insights",
-      "sub": "Practical thinking on AI for real businesses.",
       "all": "View All Insights",
-      "read": "5 min read",
-      "soon": "Full articles are on the way.",
+      "read": "{n} min read",
       "items": [
         {
           "tag": "Use Cases",
-          "t": "Five everyday tasks an AI agent can take off your plate",
-          "d": "From reports to follow-ups, the repetitive work that quietly eats your week."
+          "t": "5 Practical Ways to Use AI in Your Business Today",
+          "min": 6
         },
         {
           "tag": "Strategy",
-          "t": "Where should your business start with AI?",
-          "d": "A simple way to find the first project that pays back, before you build anything."
+          "t": "From Idea to Impact: Building an AI Roadmap",
+          "min": 8
         },
         {
           "tag": "Content",
-          "t": "Professional video and content without a studio",
-          "d": "How AI changes what a small team can produce, and where a human eye still matters."
+          "t": "How AI Is Changing Business Content Creation",
+          "min": 5
         }
       ]
     },
     "cta": {
       "title": "Let's Talk About Your Business.",
-      "sub": "Tell us where your time goes, and we'll show you what can change.",
+      "sub": "Tell us what you're looking to improve. We'll explore the right way forward together.",
       "talk": "Let's Talk",
       "wa": "Chat on WhatsApp"
     },
     "footer": {
-      "tag": "AI that moves your business forward.",
-      "company": "Company",
-      "services": "Services",
-      "follow": "Follow",
       "privacy": "Privacy Policy",
-      "terms": "Terms",
-      "rights": "All rights reserved."
+      "terms": "Terms of Use",
+      "rights": "All rights reserved.",
+      "social": "Social"
     },
     "pages": {
-      "casesIntro": "Illustrative scenarios showing how AI4U solutions work in practice. Real client stories will be added here with their permission.",
-      "insightsIntro": "Practical thinking on AI for real businesses. Articles are published here as they are ready."
+      "casesTitle": "Case Studies",
+      "insightsTitle": "Insights"
     }
   }
 }

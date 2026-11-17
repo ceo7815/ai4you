@@ -10,20 +10,20 @@ export async function Header() {
   return (
     <SiteHeader
       locale={locale}
-      servicesLabel={t("nav.services")}
-      services={serviceSlugs.map((slug) => ({ href: p(`/services/${slug}`), label: t(`services.${slug}.name`) }))}
-      links={[
-        { href: p("/how-we-work"), label: t("nav.howWeWork") },
-        { href: p("/about"), label: t("nav.about") },
-        { href: p("/blog"), label: t("nav.blog") },
+      items={[
+        { href: p("/"), label: t("r.nav.home") },
+        ...serviceSlugs.map((slug) => ({ href: p(`/services/${slug}`), label: t(`services.${slug}.name`) })),
+        { href: p("/case-studies"), label: t("r.nav.caseStudies") },
+        { href: p("/insights"), label: t("r.nav.insights") },
+        { href: p("/about"), label: t("r.nav.about") },
       ]}
-      talk={t("cta.letsTalk")}
+      talk={t("r.nav.letsTalk")}
       langEn={t("nav.languageEn")}
       langAr={t("nav.languageAr")}
-      menu={locale === "ar" ? "القائمة" : "Menu"}
-      close={locale === "ar" ? "إغلاق" : "Close"}
+      menu={t("r.nav.menu")}
+      close={t("r.nav.close")}
       contactHref={p("/contact")}
-      siteName={t("meta.siteName")}
+      siteName="AI4U"
     />
   );
 }

@@ -673,121 +673,115 @@
   },
   "r": {
     "nav": {
-      "home": "Home",
-      "caseStudies": "Case Studies",
-      "insights": "Insights",
-      "about": "About",
-      "letsTalk": "Let's Talk",
-      "menu": "Menu",
-      "close": "Close"
+      "home": "الرئيسية",
+      "caseStudies": "دراسات الحالة",
+      "insights": "رؤى",
+      "about": "من نحن",
+      "letsTalk": "لنتحدث",
+      "menu": "القائمة",
+      "close": "إغلاق"
     },
     "hero": {
-      "title": "AI that moves your business forward.",
-      "sub": "Practical AI solutions, creative content, and smart automation designed around your business.",
-      "talk": "Let's Talk",
-      "explore": "Explore Our Services",
-      "tiles": "AI4U services"
+      "title": "ذكاء اصطناعي يدفع أعمالك إلى الأمام.",
+      "sub": "حلول ذكاء اصطناعي عملية، ومحتوى إبداعي، وأتمتة ذكية مصممة حول أعمالك.",
+      "talk": "لنتحدث",
+      "explore": "استكشف خدماتنا",
+      "tiles": "خدمات AI4U"
     },
     "services": {
-      "title": "Our Services",
-      "sub": "Everything your business needs from AI, in one place."
+      "title": "خدماتنا",
+      "sub": "حلول ذكاء اصطناعي متكاملة تُحدث أثراً حقيقياً في الأعمال.",
+      "lines": {
+        "ai-agents": "وكلاء ذكاء اصطناعي ينجزون العمل.",
+        "conversational-ai": "محادثات أفضل. خدمة أذكى.",
+        "ai-video-content": "محتوى يدفع علامتك إلى الأمام.",
+        "ai-systems-automation": "أنظمة مترابطة. عمليات أبسط.",
+        "ai-strategy-consulting": "الذكاء الاصطناعي المناسب يبدأ بالاستراتيجية الصحيحة."
+      }
     },
     "how": {
-      "title": "How We Work",
-      "sub": "A clear, human process from first conversation to lasting results.",
+      "title": "كيف نعمل",
+      "sub": "عملية واضحة وتعاونية نحوّل بها أهدافك إلى حلول ذكاء اصطناعي عملية.",
       "steps": [
         {
           "n": "01",
-          "t": "Discover",
-          "d": "We learn how your business really works and where the time goes."
+          "t": "اكتشف",
+          "d": "افهم عملك وأهدافك واحتياجاتك الحقيقية."
         },
         {
           "n": "02",
-          "t": "Design",
-          "d": "We map the workflow and propose exactly what to build."
+          "t": "صمّم",
+          "d": "شكّل الحل المناسب لعملك."
         },
         {
           "n": "03",
-          "t": "Build",
-          "d": "We build it with you, around your processes and your language."
+          "t": "ابنِ",
+          "d": "طوّر الحل وفلسفه ليناسب عملياتك."
         },
         {
           "n": "04",
-          "t": "Implement",
-          "d": "We embed it into the systems and the team you already have."
+          "t": "نفّذ",
+          "d": "أطلقه بسلاسة، مع فريقك الجاهز لاستخدامه."
         },
         {
           "n": "05",
-          "t": "Refine",
-          "d": "We stay with you, check the quality and keep improving it."
+          "t": "حسّن",
+          "d": "قِس، حسّن، ونمِّ الأثر مع الوقت."
         }
       ]
     },
     "cases": {
-      "title": "Case Studies",
-      "sub": "Examples of what AI can do for a business like yours.",
-      "all": "View All Case Studies",
-      "badge": "Example scenario",
+      "title": "دراسات الحالة",
+      "all": "عرض كل دراسات الحالة",
       "items": [
         {
-          "tag": "Conversational AI",
-          "t": "Instant replies for every new lead",
-          "d": "An assistant that answers, qualifies and books meetings around the clock, in your customers' language."
+          "t": "تجربة خدمة عملاء أذكى مع الذكاء الاصطناعي"
         },
         {
-          "tag": "AI Agents",
-          "t": "Monthly reports that prepare themselves",
-          "d": "An agent that builds each client report from your data and sends it to you for approval."
+          "t": "تبسيط العمليات بأتمتة ذكية"
         },
         {
-          "tag": "AI Video & Content",
-          "t": "Professional video without the production costs",
-          "d": "Polished video and social content created from the material you already have."
+          "t": "محتوى مدعوم بالذكاء الاصطناعي لحملة أعمال"
         }
       ]
     },
     "insights": {
-      "title": "Insights",
-      "sub": "Practical thinking on AI for real businesses.",
-      "all": "View All Insights",
-      "read": "5 min read",
-      "soon": "Full articles are on the way.",
+      "title": "رؤى",
+      "all": "عرض كل الرؤى",
+      "read": "{n} دقائق قراءة",
       "items": [
         {
-          "tag": "Use Cases",
-          "t": "Five everyday tasks an AI agent can take off your plate",
-          "d": "From reports to follow-ups, the repetitive work that quietly eats your week."
+          "tag": "حالات استخدام",
+          "t": "5 طرق عملية لاستخدام الذكاء الاصطناعي في عملك اليوم",
+          "min": 6
         },
         {
-          "tag": "Strategy",
-          "t": "Where should your business start with AI?",
-          "d": "A simple way to find the first project that pays back, before you build anything."
+          "tag": "استراتيجية",
+          "t": "من الفكرة إلى الأثر: بناء خارطة طريق للذكاء الاصطناعي",
+          "min": 8
         },
         {
-          "tag": "Content",
-          "t": "Professional video and content without a studio",
-          "d": "How AI changes what a small team can produce, and where a human eye still matters."
+          "tag": "محتوى",
+          "t": "كيف يغيّر الذكاء الاصطناعي صناعة المحتوى للأعمال",
+          "min": 5
         }
       ]
     },
     "cta": {
-      "title": "Let's Talk About Your Business.",
-      "sub": "Tell us where your time goes, and we'll show you what can change.",
-      "talk": "Let's Talk",
-      "wa": "Chat on WhatsApp"
+      "title": "لنتحدث عن عملك.",
+      "sub": "أخبرنا بما تريد تحسينه. معاً سنستكشف الطريق الصحيح إلى الأمام.",
+      "talk": "لنتحدث",
+      "wa": "محادثة عبر واتساب"
     },
     "footer": {
-      "tag": "AI that moves your business forward.",
-      "company": "Company",
-      "services": "Services",
-      "follow": "Follow",
-      "privacy": "Privacy Policy",
-      "terms": "Terms",
-      "rights": "All rights reserved."
+      "privacy": "سياسة الخصوصية",
+      "terms": "شروط الاستخدام",
+      "rights": "جميع الحقوق محفوظة.",
+      "social": "التواصل"
     },
     "pages": {
-      "casesIntro": "Illustrative scenarios showing how AI4U solutions work in practice. Real client stories will be added here with their permission.",
-      "insightsIntro": "Practical thinking on AI for real businesses. Articles are published here as they are ready."
+      "casesTitle": "دراسات الحالة",
+      "insightsTitle": "رؤى"
     }
   }
 }

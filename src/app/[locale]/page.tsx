@@ -6,46 +6,32 @@ import { routing, type Locale } from "@/i18n/routing";
 import { alternatesFor, siteUrl } from "@/lib/site";
 import { serviceSlugs } from "@/lib/services";
 import { HeroVisual } from "@/components/r/hero-visual";
-import { AccentText } from "@/components/r/accent";
-import {
-  ContactSection,
-  ControlSection,
-  ExperienceSection,
-  FaqSection,
-  HowSection,
-  LastingSection,
-  MidCta,
-  OwnershipSection,
-  ServicesSection,
-  VideoBand,
-  WithWithoutSection,
-} from "@/components/r/sections";
+import { CasesSection, HowSection, InsightsSection, ServicesSection, TalkBand } from "@/components/r/home";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
-  const t = await getTranslations({ locale, namespace: "meta" });
+  const t = await getTranslations({ locale, namespace: "r.hero" });
   return {
-    title: { absolute: t("homeTitle") },
-    description: t("homeDescription"),
+    title: { absolute: `${t("title")} · AI4U` },
+    description: t("sub"),
     alternates: alternatesFor(locale as Locale, "/"),
     openGraph: {
-      title: t("homeTitle"),
-      description: t("homeDescription"),
+      title: t("title"),
+      description: t("sub"),
       url: `${siteUrl}/${locale}`,
       type: "website",
       images: ["/og.jpg"],
     },
-    twitter: { card: "summary_large_image", title: t("homeTitle"), description: t("homeDescription"), images: ["/og.jpg"] },
+    twitter: { card: "summary_large_image", title: t("title"), description: t("sub"), images: ["/og.jpg"] },
   };
 }
 
 export default async function HomePage() {
   const t = await getTranslations();
   const labels = Object.fromEntries(serviceSlugs.map((s) => [s, t(`services.${s}.name`)]));
-  const faq = t.raw("home.faq") as { q: string; a: string }[];
 
   return (
     <>
@@ -53,55 +39,35 @@ export default async function HomePage() {
         <div className="r-wrap r-hero-grid">
           <div className="r-hero-copy">
             <h1 id="h-hero" className="r-h1">
-              <AccentText value={t("home.hero.headline")} />
+              {t("r.hero.title")}
             </h1>
-            <p className="r-hero-sub">{t("home.hero.subline")}</p>
+            <p className="r-hero-sub">{t("r.hero.sub")}</p>
             <div className="r-hero-btns">
-              <a href="#contact-form" className="r-btn r-btn-primary">
-                {t("cta.letsTalk")} <ArrowRight size={18} className="rtl:-scale-x-100" aria-hidden />
+              <a href="#talk" className="r-btn r-btn-primary">
+                {t("r.hero.talk")} <ArrowRight size={16} className="rtl:-scale-x-100" aria-hidden />
               </a>
               <a href="#services" className="r-btn r-btn-glass">
-                {t("nav.services")}
+                {t("r.hero.explore")}
               </a>
             </div>
           </div>
-          <HeroVisual labels={labels} caption={t("nav.services")} />
+          <HeroVisual labels={labels} caption={t("r.hero.tiles")} />
         </div>
       </section>
-      <VideoBand />
       <ServicesSection />
-      <ExperienceSection />
-      <WithWithoutSection />
-      <MidCta />
       <HowSection />
-      <ControlSection />
-      <LastingSection />
-      <OwnershipSection />
-      <FaqSection />
-      <ContactSection />
+      <CasesSection />
+      <InsightsSection />
+      <TalkBand />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "AI4YOU",
+            name: "AI4U",
             url: siteUrl,
-            description: t("meta.homeDescription"),
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faq.map((item) => ({
-              "@type": "Question",
-              name: item.q,
-              acceptedAnswer: { "@type": "Answer", text: item.a },
-            })),
+            description: t("r.hero.sub"),
           }),
         }}
       />

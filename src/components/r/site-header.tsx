@@ -13,9 +13,7 @@ const otherLocale: Record<Locale, Locale> = { en: "ar", ar: "en" };
 
 export function SiteHeader({
   locale,
-  servicesLabel,
-  services,
-  links,
+  items,
   talk,
   langEn,
   langAr,
@@ -25,9 +23,7 @@ export function SiteHeader({
   siteName,
 }: {
   locale: string;
-  servicesLabel: string;
-  services: Item[];
-  links: Item[];
+  items: Item[];
   talk: string;
   langEn: string;
   langAr: string;
@@ -38,12 +34,12 @@ export function SiteHeader({
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [svcOpen, setSvcOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const pathname = usePathname() ?? `/${locale}`;
   const home = pathname === `/${locale}` || pathname === `/${locale}/`;
-  const talkHref = home ? "#contact-form" : contactHref;
-  const svcId = useId();
-  const svcRef = useRef<HTMLDivElement>(null);
+  const talkHref = home ? "#talk" : contactHref;
+  const langId = useId();
+  const langRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -63,16 +59,16 @@ export function SiteHeader({
   if (seenPath !== pathname) {
     setSeenPath(pathname);
     if (open) setOpen(false);
-    if (svcOpen) setSvcOpen(false);
+    if (langOpen) setLangOpen(false);
   }
 
   useEffect(() => {
-    if (!svcOpen) return;
+    if (!langOpen) return;
     const onDoc = (e: MouseEvent) => {
-      if (!svcRef.current?.contains(e.target as Node)) setSvcOpen(false);
+      if (!langRef.current?.contains(e.target as Node)) setLangOpen(false);
     };
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setSvcOpen(false);
+      if (e.key === "Escape") setLangOpen(false);
     };
     document.addEventListener("mousedown", onDoc);
     document.addEventListener("keydown", onKey);
@@ -80,72 +76,65 @@ export function SiteHeader({
       document.removeEventListener("mousedown", onDoc);
       document.removeEventListener("keydown", onKey);
     };
-  }, [svcOpen]);
+  }, [langOpen]);
 
   const target = otherLocale[locale as Locale];
   const langHref = pathname.replace(/^\/(en|ar)(?=\/|$)/, `/${target}`) || `/${target}`;
   const rememberLang = () => {
     document.cookie = `NEXT_LOCALE=${target}; path=/; max-age=31536000; samesite=lax`;
   };
+  const currentLang = locale === "ar" ? langAr : langEn;
+
+  const isActive = (href: string) => {
+    if (href === `/${locale}` || href === `/${locale}/`) return home;
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <header className="r-header" data-scrolled={scrolled ? "true" : "false"}>
-      <div className="r-header-bar">
+      <div className="r-wrap r-header-bar">
         <Link href={`/${locale}`} className="r-logo-link" aria-label={siteName} onClick={() => setOpen(false)}>
           <Logo id="hd" />
         </Link>
 
         <nav className="r-nav" aria-label={siteName}>
-          <div className="r-dd" ref={svcRef} data-open={svcOpen ? "true" : "false"}>
-            <button
-              type="button"
-              className="r-nav-link r-dd-btn"
-              aria-expanded={svcOpen}
-              aria-controls={svcId}
-              onClick={() => setSvcOpen((v) => !v)}
-            >
-              {servicesLabel}
-              <ChevronDown size={14} aria-hidden />
-            </button>
-            <div id={svcId} className="r-dd-pop" hidden={!svcOpen}>
-              {services.map((it) => (
-                <Link key={it.href} href={it.href} onClick={() => setSvcOpen(false)}>
-                  {it.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-          {links.map((it) => (
-            <Link key={it.href} href={it.href} className="r-nav-link">
+          {items.map((it) => (
+            <Link key={it.href} href={it.href} className="r-nav-link" aria-current={isActive(it.href) ? "page" : undefined}>
               {it.label}
             </Link>
           ))}
         </nav>
 
         <div className="r-header-end">
-          <span className="r-lang-switch" lang="">
-            {locale === "en" ? (
-              <span lang="en" aria-current="true">
-                {langEn}
-              </span>
-            ) : (
-              <a href={langHref} hrefLang="en" lang="en" onClick={rememberLang}>
-                {langEn}
+          <div className="r-lang" ref={langRef} data-open={langOpen ? "true" : "false"}>
+            <button
+              type="button"
+              className="r-lang-btn"
+              aria-expanded={langOpen}
+              aria-controls={langId}
+              onClick={() => setLangOpen((v) => !v)}
+            >
+              <span lang={locale}>{currentLang}</span>
+              <ChevronDown size={14} aria-hidden />
+            </button>
+            <div id={langId} className="r-lang-pop" hidden={!langOpen}>
+              <a
+                href={pathname}
+                hrefLang={locale}
+                lang={locale}
+                aria-current="true"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setLangOpen(false);
+                }}
+              >
+                {currentLang}
               </a>
-            )}
-            <span aria-hidden className="r-lang-slash">
-              /
-            </span>
-            {locale === "ar" ? (
-              <span lang="ar" aria-current="true">
-                {langAr}
-              </span>
-            ) : (
-              <a href={langHref} hrefLang="ar" lang="ar" onClick={rememberLang}>
-                {langAr}
+              <a href={langHref} hrefLang={target} lang={target} onClick={rememberLang}>
+                {target === "en" ? langEn : langAr}
               </a>
-            )}
-          </span>
+            </div>
+          </div>
           <Link href={talkHref} className="r-pill">
             {talk}
             <ArrowRight aria-hidden size={16} className="rtl:-scale-x-100" />
@@ -165,21 +154,30 @@ export function SiteHeader({
 
       <div id="r-drawer" className="r-drawer" data-open={open ? "true" : "false"} aria-hidden={!open}>
         <nav className="r-drawer-nav" aria-label={siteName}>
-          <p className="r-drawer-label">{servicesLabel}</p>
-          {services.map((it) => (
-            <Link key={it.href} href={it.href} onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
-              {it.label}
-              <ArrowRight aria-hidden size={18} className="rtl:-scale-x-100" />
-            </Link>
-          ))}
-          {links.map((it) => (
-            <Link key={it.href} href={it.href} onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
+          {items.map((it) => (
+            <Link
+              key={it.href}
+              href={it.href}
+              onClick={() => setOpen(false)}
+              tabIndex={open ? 0 : -1}
+              aria-current={isActive(it.href) ? "page" : undefined}
+            >
               {it.label}
               <ArrowRight aria-hidden size={18} className="rtl:-scale-x-100" />
             </Link>
           ))}
         </nav>
-        <a href={langHref} hrefLang={target} lang={target} className="r-drawer-lang" onClick={() => { rememberLang(); setOpen(false); }} tabIndex={open ? 0 : -1}>
+        <a
+          href={langHref}
+          hrefLang={target}
+          lang={target}
+          className="r-drawer-lang"
+          onClick={() => {
+            rememberLang();
+            setOpen(false);
+          }}
+          tabIndex={open ? 0 : -1}
+        >
           {target === "en" ? langEn : langAr}
         </a>
         <Link href={talkHref} className="r-pill r-pill-lg" onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
